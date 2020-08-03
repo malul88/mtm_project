@@ -21,7 +21,7 @@ public:
 
     void deleteVertex(std::string vertex);
 
-    bool isContain(std::string vertex);
+    bool isContain(std::string vertex) const;
 
     std::set<std::string>::iterator begin() const;
 
@@ -33,6 +33,15 @@ public:
 };
 
 Vertex operator+(const Vertex &vertex1, const Vertex &vertex2);
+
+Vertex operator^(const Vertex &vertex1,const Vertex &vertex2);
+
+Vertex operator-(const Vertex &vertex1,const Vertex &vertex2);
+
+Vertex operator*(const Vertex &vertex1,const Vertex &vertex2);
+
+
+
 
 
 #endif //GCALC_VERTEX_H

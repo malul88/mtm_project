@@ -1,3 +1,5 @@
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "modernize-use-auto"
 
 
 #include "Vertex.h"
@@ -32,7 +34,7 @@ void Vertex::deleteVertex(std::string vertex) {
 
 }
 
-bool Vertex::isContain(std::string vertex) {
+bool Vertex::isContain(std::string vertex) const {
     std::set<std::string>::iterator it;
     it = vertexes.find(vertex);
     return it != vertexes.end();
@@ -58,3 +60,45 @@ Vertex operator+(const Vertex &vertex1, const Vertex &vertex2){
 
 }
 
+Vertex operator^(const Vertex &vertex1,const Vertex &vertex2){
+    Vertex result;
+    std::set<std::string>::iterator it = vertex1.begin();
+    for (;it!=vertex1.end();it++){
+        if (vertex2.isContain(*it)){
+            result.addVertex(*it);
+        }
+    }
+    return result;
+}
+
+Vertex operator-(const Vertex &vertex1,const Vertex &vertex2){
+    Vertex result(vertex1);
+    std::set<std::string>::iterator it = vertex2.begin();
+    for (;it!=vertex2.end();it++){
+        if (result.isContain(*it)){
+            result.deleteVertex(*it);
+        }
+    }
+    return result;
+}
+
+Vertex operator*(const Vertex &vertex1,const Vertex &vertex2){
+    Vertex result;
+    std::set<std::string>::iterator it1 = vertex1.begin();
+    std::set<std::string>::iterator it2 = vertex2.begin();
+    for (; it1!=vertex1.end(); ++it1) {
+        for (; it2!=vertex2.end(); ++it2) {
+            std::string temp = (*it1 + *it2);
+            result.addVertex(temp);
+        }
+    }
+    return result;
+
+
+}
+
+
+
+
+
+#pragma clang diagnostic pop
