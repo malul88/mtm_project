@@ -6,13 +6,49 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.cpp
+C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
+iostream
+-
+utility
+-
+set
+-
+
+C:/Users/nhfh7/CLionProjects/Gcalc/Graph.cpp
+Graph.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
+utility
+-
+
+C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
+iostream
+-
+set
+-
+utility
+-
 Vertex.h
 C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
+Edges.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
 
 C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
 iostream
 -
 set
 -
+
+C:/Users/nhfh7/CLionProjects/Gcalc/main.cpp
+iostream
+-
+set
+-
+map
+-
+Vertex.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
+Edges.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
+Graph.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
 

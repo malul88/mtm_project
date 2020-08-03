@@ -4,25 +4,53 @@
 #include <iostream>
 #include <set>
 #include <utility>
+#include "Vertex.h"
+#include "Edges.h"
 
 
 class Graph {
 private:
-    std::string name;
-    std::set<std::string> vertexes;
-    std::set<std::pair<std::string, std::string>> edges;
+    Vertex vertexes;
+    Edges edges;
 public:
-    Graph(std::string name, std::set<std::string> vertexes, std::set<std::pair<std::string, std::string>> edges);
+    Graph(Vertex& vertexes, Edges& edges);
+
+    Graph();
 
     Graph(const Graph &graph);
 
-    ~Graph();
-
     Graph &operator=(const Graph &graph);
+
+    friend Graph operator+(const Graph &graph1, const Graph &graph2);
+
+    friend Graph operator^(const Graph &graph1, const Graph &graph2);
+
+    friend Graph operator-(const Graph &graph1, const Graph &graph2);
+
+    friend Graph operator*(const Graph &graph1, const Graph &graph2);
+
+    friend Graph operator!(const Graph &graph1);
+
+
+
+
+
 
 
 
 };
+
+Graph operator+(const Graph &graph1, const Graph &graph2);
+
+Graph operator^(const Graph &graph1, const Graph &graph2);
+
+Graph operator-(const Graph &graph1, const Graph &graph2);
+
+Graph operator*(const Graph &graph1, const Graph &graph2);
+
+Graph operator!(const Graph &graph1);
+
+
 
 
 #endif //GCALC_GRAPH_H
