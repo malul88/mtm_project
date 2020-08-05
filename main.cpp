@@ -43,7 +43,7 @@ int main() {
     Parser j(mmm);
 
     char cmd[] ="  who";
-    char cmd1[] ="  G1 = {x1,x2,x3 | <x1,x2> <x2,x3>} ";
+    char cmd1[] ="  G1 = G2 - G3 ";
     j.checkCmd(cmd1);
 //   j.checkCmd(cmd);
 

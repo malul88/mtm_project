@@ -151,18 +151,22 @@ void Parser::dealWithEqual(std::string str, int equal) {
     if (first_letter != std::string::npos) {
         dealWithDefinition(left_object, str, equal);
     } else {
-
-        if (gcalc.isContain(left_object)){
-
+        char c = firstLetter(right_object);
+        if  (c == '!'){
+            Graph g1 = complement(right_object);
         }
+        else {
+            Graph g1 = binaryExpression(right_object);
+        }
+
     }
 
 
 }
 
-size_t Parser::firstLetter(std::string str) {
-    for (int i = 0; i < str.size() ; ++i) {
-        if (str[i] != ' '){
+char Parser::firstLetter(std::string str) {
+    for (char i : str) {
+        if (i != ' '){
             break;
         }
         return i;
@@ -189,6 +193,21 @@ Edges Parser::makeSetOfEdge(std::vector<std::pair<std::string, std::string>> edg
     for (; it != edge_result.end() ; ++it) {
         edges1.addEdge(*it);
     }
+}
+
+Graph Parser::complement(std::string str) {
+    str = str.substr(str.find_first_of('!'));
+    int last = str.find(' ');
+    str = str.substr(0,last);
+    Graph g1 = gcalc.getGraph(str);
+    return !g1;
+}
+
+Graph Parser::binaryExpression(std::string str) {
+    std::string temp = str;
+    str = str.substr(str.find(firstLetter(str)));
+    std::string left_o = str.substr(str.find(' '));
+
 }
 
 

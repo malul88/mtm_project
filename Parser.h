@@ -24,11 +24,15 @@ public:
 
     void dealWithEqual(std::string basicString, int equal);
 
-    static size_t firstLetter(std::string basicString);
+    static char firstLetter(std::string basicString);
 
     static Vertex makeSetOfVertex(std::vector<std::string> vertex_result);
 
     static Edges makeSetOfEdge(std::vector<std::pair<std::string, std::string>> edge_result);
+
+    Graph complement(std::string basicString);
+
+    Graph binaryExpression(std::string basicString);
 };
 
 
