@@ -1,8 +1,6 @@
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "performance-inefficient-string-concatenation"
-//
-// Created by nhfh7 on 03/08/2020.
-//
+
 
 #include "Edges.h"
 
@@ -45,6 +43,10 @@ std::set<std::pair<std::string, std::string>>::iterator Edges::begin() const {
 std::set<std::pair<std::string, std::string>>::iterator Edges::end() const {
     std::set<std::pair<std::string,std::string>>::iterator it = edges.end();
     return it;
+}
+
+void Edges::clearEdges() {
+    edges.clear();
 }
 
 

@@ -5,7 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Michael Malul/semester aviv/matam/mtm_project/Edges.cpp" "C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/CMakeFiles/Gcalc.dir/Edges.cpp.obj"
+  "C:/Users/Michael Malul/semester aviv/matam/mtm_project/Gcalc.cpp" "C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/CMakeFiles/Gcalc.dir/Gcalc.cpp.obj"
   "C:/Users/Michael Malul/semester aviv/matam/mtm_project/Graph.cpp" "C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/CMakeFiles/Gcalc.dir/Graph.cpp.obj"
+  "C:/Users/Michael Malul/semester aviv/matam/mtm_project/Parser.cpp" "C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/CMakeFiles/Gcalc.dir/Parser.cpp.obj"
   "C:/Users/Michael Malul/semester aviv/matam/mtm_project/Vertex.cpp" "C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/CMakeFiles/Gcalc.dir/Vertex.cpp.obj"
   "C:/Users/Michael Malul/semester aviv/matam/mtm_project/main.cpp" "C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/CMakeFiles/Gcalc.dir/main.cpp.obj"
   )

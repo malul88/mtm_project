@@ -27,6 +27,7 @@ public:
 
     std::set<std::string>::iterator end() const;
 
+    void clearVertexes();
 
 
 

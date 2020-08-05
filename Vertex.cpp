@@ -50,6 +50,10 @@ std::set<std::string>::iterator Vertex::end() const {
     return it;
 }
 
+void Vertex::clearVertexes() {
+    vertexes.clear();
+}
+
 Vertex operator+(const Vertex &vertex1, const Vertex &vertex2){
     Vertex result(vertex1);
     std::set<std::string>::iterator it = vertex2.begin();

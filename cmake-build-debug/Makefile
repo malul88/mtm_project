@@ -149,6 +149,33 @@ Edges.cpp.s:
 	$(MAKE) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Edges.cpp.s
 .PHONY : Edges.cpp.s
 
+Gcalc.obj: Gcalc.cpp.obj
+
+.PHONY : Gcalc.obj
+
+# target to build an object file
+Gcalc.cpp.obj:
+	$(MAKE) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Gcalc.cpp.obj
+.PHONY : Gcalc.cpp.obj
+
+Gcalc.i: Gcalc.cpp.i
+
+.PHONY : Gcalc.i
+
+# target to preprocess a source file
+Gcalc.cpp.i:
+	$(MAKE) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Gcalc.cpp.i
+.PHONY : Gcalc.cpp.i
+
+Gcalc.s: Gcalc.cpp.s
+
+.PHONY : Gcalc.s
+
+# target to generate assembly for a file
+Gcalc.cpp.s:
+	$(MAKE) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Gcalc.cpp.s
+.PHONY : Gcalc.cpp.s
+
 Graph.obj: Graph.cpp.obj
 
 .PHONY : Graph.obj
@@ -175,6 +202,33 @@ Graph.s: Graph.cpp.s
 Graph.cpp.s:
 	$(MAKE) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Graph.cpp.s
 .PHONY : Graph.cpp.s
+
+Parser.obj: Parser.cpp.obj
+
+.PHONY : Parser.obj
+
+# target to build an object file
+Parser.cpp.obj:
+	$(MAKE) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Parser.cpp.obj
+.PHONY : Parser.cpp.obj
+
+Parser.i: Parser.cpp.i
+
+.PHONY : Parser.i
+
+# target to preprocess a source file
+Parser.cpp.i:
+	$(MAKE) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Parser.cpp.i
+.PHONY : Parser.cpp.i
+
+Parser.s: Parser.cpp.s
+
+.PHONY : Parser.s
+
+# target to generate assembly for a file
+Parser.cpp.s:
+	$(MAKE) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Parser.cpp.s
+.PHONY : Parser.cpp.s
 
 Vertex.obj: Vertex.cpp.obj
 
@@ -242,9 +296,15 @@ help:
 	@echo ... Edges.obj
 	@echo ... Edges.i
 	@echo ... Edges.s
+	@echo ... Gcalc.obj
+	@echo ... Gcalc.i
+	@echo ... Gcalc.s
 	@echo ... Graph.obj
 	@echo ... Graph.i
 	@echo ... Graph.s
+	@echo ... Parser.obj
+	@echo ... Parser.i
+	@echo ... Parser.s
 	@echo ... Vertex.obj
 	@echo ... Vertex.i
 	@echo ... Vertex.s

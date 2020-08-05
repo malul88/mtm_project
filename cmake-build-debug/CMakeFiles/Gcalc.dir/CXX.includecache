@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Edges.cpp
-Edges.h
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Edges.h
-
 C:/Users/Michael Malul/semester aviv/matam/mtm_project/Edges.h
 iostream
 -
@@ -18,45 +14,49 @@ utility
 set
 -
 
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Graph.cpp
+C:/Users/Michael Malul/semester aviv/matam/mtm_project/Gcalc.h
 Graph.h
 C:/Users/Michael Malul/semester aviv/matam/mtm_project/Graph.h
-utility
--
-
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Graph.h
-iostream
--
-set
--
-utility
--
-Vertex.h
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Vertex.h
-Edges.h
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Edges.h
-
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Vertex.cpp
-Vertex.h
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Vertex.h
-
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Vertex.h
-iostream
--
-set
--
-
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/main.cpp
-iostream
--
-set
--
 map
 -
+
+C:/Users/Michael Malul/semester aviv/matam/mtm_project/Graph.h
+iostream
+-
+set
+-
+utility
+-
 Vertex.h
 C:/Users/Michael Malul/semester aviv/matam/mtm_project/Vertex.h
 Edges.h
 C:/Users/Michael Malul/semester aviv/matam/mtm_project/Edges.h
+
+C:/Users/Michael Malul/semester aviv/matam/mtm_project/Parser.cpp
+cstring
+-
+sstream
+-
+Parser.h
+C:/Users/Michael Malul/semester aviv/matam/mtm_project/Parser.h
 Graph.h
 C:/Users/Michael Malul/semester aviv/matam/mtm_project/Graph.h
+
+C:/Users/Michael Malul/semester aviv/matam/mtm_project/Parser.h
+Gcalc.h
+C:/Users/Michael Malul/semester aviv/matam/mtm_project/Gcalc.h
+cctype
+-
+string
+-
+utility
+-
+vector
+-
+
+C:/Users/Michael Malul/semester aviv/matam/mtm_project/Vertex.h
+iostream
+-
+set
+-
 

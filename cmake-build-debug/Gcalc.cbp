@@ -86,10 +86,22 @@
 		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Edges.h">
 			<Option target="Gcalc"/>
 		</Unit>
+		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Gcalc.cpp">
+			<Option target="Gcalc"/>
+		</Unit>
+		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Gcalc.h">
+			<Option target="Gcalc"/>
+		</Unit>
 		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Graph.cpp">
 			<Option target="Gcalc"/>
 		</Unit>
 		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Graph.h">
+			<Option target="Gcalc"/>
+		</Unit>
+		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Parser.cpp">
+			<Option target="Gcalc"/>
+		</Unit>
+		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Parser.h">
 			<Option target="Gcalc"/>
 		</Unit>
 		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Vertex.cpp">
