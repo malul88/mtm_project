@@ -4,7 +4,8 @@
 #include "Vertex.h"
 #include "Edges.h"
 #include "Graph.h"
-
+#include "Gcalc.h"
+#include "Parser.h"
 int main() {
     using namespace std;
     Vertex v1;
@@ -31,7 +32,21 @@ int main() {
     Graph G2(v2,e2);
     Graph G3 = G1 + G2;
     G3 = !G1;
-    G3 = !G1;
+    Graph *G4 = new Graph;
+    Graph *G5 = new Graph;
+    *G4 = G1;
+    *G5 = !G1;
+
+    Gcalc mmm;
+    mmm.addGraph("G4",G4);
+    mmm.addGraph("G5",G5);
+    Parser j(mmm);
+
+    char cmd[] ="  who";
+    char cmd1[] ="  G1 = {x1,x2,x3| <x1,x2> <x2,x3>} ";
+    j.checkCmd(cmd1);
+//    j.checkCmd(cmd);
+
 
 
 

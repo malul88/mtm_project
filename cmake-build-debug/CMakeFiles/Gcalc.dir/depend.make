@@ -4,16 +4,31 @@
 CMakeFiles/Gcalc.dir/Edges.cpp.obj: ../Edges.cpp
 CMakeFiles/Gcalc.dir/Edges.cpp.obj: ../Edges.h
 
+CMakeFiles/Gcalc.dir/Gcalc.cpp.obj: ../Edges.h
+CMakeFiles/Gcalc.dir/Gcalc.cpp.obj: ../Gcalc.cpp
+CMakeFiles/Gcalc.dir/Gcalc.cpp.obj: ../Gcalc.h
+CMakeFiles/Gcalc.dir/Gcalc.cpp.obj: ../Graph.h
+CMakeFiles/Gcalc.dir/Gcalc.cpp.obj: ../Vertex.h
+
 CMakeFiles/Gcalc.dir/Graph.cpp.obj: ../Edges.h
 CMakeFiles/Gcalc.dir/Graph.cpp.obj: ../Graph.cpp
 CMakeFiles/Gcalc.dir/Graph.cpp.obj: ../Graph.h
 CMakeFiles/Gcalc.dir/Graph.cpp.obj: ../Vertex.h
 
+CMakeFiles/Gcalc.dir/Parser.cpp.obj: ../Edges.h
+CMakeFiles/Gcalc.dir/Parser.cpp.obj: ../Gcalc.h
+CMakeFiles/Gcalc.dir/Parser.cpp.obj: ../Graph.h
+CMakeFiles/Gcalc.dir/Parser.cpp.obj: ../Parser.cpp
+CMakeFiles/Gcalc.dir/Parser.cpp.obj: ../Parser.h
+CMakeFiles/Gcalc.dir/Parser.cpp.obj: ../Vertex.h
+
 CMakeFiles/Gcalc.dir/Vertex.cpp.obj: ../Vertex.cpp
 CMakeFiles/Gcalc.dir/Vertex.cpp.obj: ../Vertex.h
 
 CMakeFiles/Gcalc.dir/main.cpp.obj: ../Edges.h
+CMakeFiles/Gcalc.dir/main.cpp.obj: ../Gcalc.h
 CMakeFiles/Gcalc.dir/main.cpp.obj: ../Graph.h
+CMakeFiles/Gcalc.dir/main.cpp.obj: ../Parser.h
 CMakeFiles/Gcalc.dir/main.cpp.obj: ../Vertex.h
 CMakeFiles/Gcalc.dir/main.cpp.obj: ../main.cpp
 

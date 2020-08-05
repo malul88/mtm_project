@@ -47,6 +47,10 @@ std::set<std::pair<std::string, std::string>>::iterator Edges::end() const {
     return it;
 }
 
+void Edges::clearEdges() {
+    edges.clear();
+}
+
 
 Edges operator+(const Edges &edges1, const Edges &edges2) {
     Edges result(edges1);

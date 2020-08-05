@@ -86,10 +86,22 @@
 		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h">
 			<Option target="Gcalc"/>
 		</Unit>
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.cpp">
+			<Option target="Gcalc"/>
+		</Unit>
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h">
+			<Option target="Gcalc"/>
+		</Unit>
 		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Graph.cpp">
 			<Option target="Gcalc"/>
 		</Unit>
 		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h">
+			<Option target="Gcalc"/>
+		</Unit>
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Parser.cpp">
+			<Option target="Gcalc"/>
+		</Unit>
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h">
 			<Option target="Gcalc"/>
 		</Unit>
 		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.cpp">

@@ -5,7 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/nhfh7/CLionProjects/Gcalc/Edges.cpp" "C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/CMakeFiles/Gcalc.dir/Edges.cpp.obj"
+  "C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.cpp" "C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/CMakeFiles/Gcalc.dir/Gcalc.cpp.obj"
   "C:/Users/nhfh7/CLionProjects/Gcalc/Graph.cpp" "C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/CMakeFiles/Gcalc.dir/Graph.cpp.obj"
+  "C:/Users/nhfh7/CLionProjects/Gcalc/Parser.cpp" "C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/CMakeFiles/Gcalc.dir/Parser.cpp.obj"
   "C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.cpp" "C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/CMakeFiles/Gcalc.dir/Vertex.cpp.obj"
   "C:/Users/nhfh7/CLionProjects/Gcalc/main.cpp" "C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/CMakeFiles/Gcalc.dir/main.cpp.obj"
   )
