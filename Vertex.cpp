@@ -3,7 +3,7 @@
 
 
 #include "Vertex.h"
-
+#include <stack>
 Vertex::Vertex(std::set<std::string> vertexes):vertexes(vertexes) {
 }
 
@@ -25,7 +25,9 @@ Vertex::Vertex() {
 }
 
 void Vertex::addVertex(std::string vertex) {
-
+    if (!checkVertexName(vertex)){
+        throw WrongVertexName();
+    }
     vertexes.insert(vertex);
 }
 
@@ -52,6 +54,27 @@ std::set<std::string>::iterator Vertex::end() const {
 
 void Vertex::clearVertexes() {
     vertexes.clear();
+}
+
+bool Vertex::checkIfEmpty() {
+    return vertexes.empty();
+}
+
+bool Vertex::checkVertexName(std::string vertex) {
+    std::stack<char> stack;
+    for (int i = 0; i < vertex.size(); ++i) {
+        if(!isalnum(vertex.at(i)) && vertex.at(i) != '[' &&
+        vertex.at(i) != ']' && vertex.at(i) != ';'){
+            return false;
+        }
+        if(vertex.at(i) == '[') {
+            stack.push('[');
+        }
+        if(vertex.at(i) == ';' && stack.size() == 0 ) return false;
+        if(vertex.at(i) == ']' && stack.size() == 0) return false;
+        if(vertex.at(i) == ']' && stack.size()!= 0) stack.pop();
+    }
+    return stack.empty();
 }
 
 Vertex operator+(const Vertex &vertex1, const Vertex &vertex2){

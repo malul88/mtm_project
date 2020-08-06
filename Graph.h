@@ -33,6 +33,8 @@ public:
 
     friend Graph operator!(const Graph &graph1);
 
+    bool isContain(std::string vertex);
+
     friend std::ostream &operator<<(std::ostream &os, const Graph &graph){
         std::set<std::string>::iterator it = graph.vertexes.begin();
         for (;it!=graph.vertexes.end();it++){
@@ -45,6 +47,8 @@ public:
         }
         return os;
     }
+
+    bool checkIfEmpty();
 
 
 

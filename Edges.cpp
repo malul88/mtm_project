@@ -49,6 +49,10 @@ void Edges::clearEdges() {
     edges.clear();
 }
 
+bool Edges::checkIfEmpty() {
+    return edges.empty();
+}
+
 
 Edges operator+(const Edges &edges1, const Edges &edges2) {
     Edges result(edges1);

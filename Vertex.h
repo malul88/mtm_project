@@ -3,6 +3,7 @@
 #define GCALC_VERTEX_H
 #include <iostream>
 #include <set>
+#include "Exeptions.h"
 
 
 class Vertex {
@@ -28,6 +29,11 @@ public:
     std::set<std::string>::iterator end() const;
 
     void clearVertexes();
+
+    bool checkIfEmpty();
+
+    bool checkVertexName(std::string vertex);
+
 
 
 

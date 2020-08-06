@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug"/>
+				<Option working_dir="C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Gcalc">
-				<Option output="C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Gcalc.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug"/>
+				<Option output="C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Gcalc.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -32,15 +32,15 @@
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Gcalc"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 Gcalc"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Gcalc/fast">
-				<Option output="C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Gcalc.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug"/>
+				<Option output="C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Gcalc.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,67 +53,73 @@
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Gcalc/fast"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 Gcalc/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug"/>
+				<Option working_dir="C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug"/>
+				<Option working_dir="C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Michael Malul/semester aviv/matam/mtm_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Edges.cpp">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Edges.cpp">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Edges.h">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Gcalc.cpp">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.cpp">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Gcalc.h">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Graph.cpp">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.cpp">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Graph.h">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Parser.cpp">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Graph.cpp">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Parser.h">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Vertex.cpp">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Parser.cpp">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/Vertex.h">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/main.cpp">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.cpp">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/Michael Malul/semester aviv/matam/mtm_project/CMakeLists.txt">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h">
+			<Option target="Gcalc"/>
+		</Unit>
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/main.cpp">
+			<Option target="Gcalc"/>
+		</Unit>
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

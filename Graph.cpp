@@ -71,7 +71,13 @@ Graph operator!(const Graph &graph1) {
     return result;
 }
 
+bool Graph::checkIfEmpty() {
+    return vertexes.checkIfEmpty() && edges.checkIfEmpty();
+}
 
+bool Graph::isContain(std::string vertex) {
+    return vertexes.isContain(vertex);
+}
 
 
 #pragma clang diagnostic pop

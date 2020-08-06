@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Edges.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
 iostream
 -
 utility
@@ -14,13 +14,17 @@ utility
 set
 -
 
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Gcalc.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
+exception
+-
+
+C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h
 Graph.h
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Graph.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
 map
 -
 
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Graph.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
 iostream
 -
 set
@@ -28,23 +32,23 @@ set
 utility
 -
 Vertex.h
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Vertex.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
 Edges.h
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Edges.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
 
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Parser.cpp
+C:/Users/nhfh7/CLionProjects/Gcalc/Parser.cpp
 cstring
 -
 sstream
 -
 Parser.h
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Parser.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h
 Graph.h
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Graph.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
 
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Parser.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h
 Gcalc.h
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Gcalc.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h
 cctype
 -
 string
@@ -53,10 +57,14 @@ utility
 -
 vector
 -
+Exeptions.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
 
-C:/Users/Michael Malul/semester aviv/matam/mtm_project/Vertex.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
 iostream
 -
 set
 -
+Exeptions.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
 

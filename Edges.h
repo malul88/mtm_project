@@ -29,6 +29,9 @@ public:
     std::set<std::pair<std::string,std::string>>::iterator end() const;
 
     void clearEdges();
+
+    bool checkIfEmpty();
+
 };
 
 Edges operator+(const Edges &edges1, const Edges &edges2);
