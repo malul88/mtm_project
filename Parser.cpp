@@ -67,6 +67,7 @@ int Parser::checkCmd(std::string str1) {
         gcalc.clearCalc();
         return 0;
     } else if (token2 == "quit") {
+        gcalc.clearCalc();
         return 1;
     }
     int equal = temp.find_first_of('=');
@@ -258,6 +259,13 @@ Graph Parser::complement(std::string str) {
     return !g1;
 }
 
+
+//Graph Parser::stringToGraph(std::string string){
+//
+//}
+
+
+
 Graph Parser::multipleOperand(std::string basicString) {
     std::vector<char> vec_operands;
     std::vector<std::string> vec_var;
@@ -265,6 +273,7 @@ Graph Parser::multipleOperand(std::string basicString) {
     int length = 0;
     int first_index = -1;
     for (int i = 0; i < basicString.size(); ++i) {
+//        if(basicString[i] == '{') dealWithEqual("",basicString,0);
         if (basicString[i] != '+' && basicString[i] != '-' && basicString[i] != '^' && basicString[i] != '!'
             && basicString[i] != '*' && basicString[i] != ' ') {
             if (first_index == -1) first_index = i;
@@ -493,6 +502,10 @@ Graph Parser::gProduct(std::string left, std::string right) {
 Graph Parser::gProduct(Graph &g1, Graph &g2) {
     Graph g3 = g1 * g2;
     return g3;
+}
+
+void Parser::addGraph(std::string graph_name, Graph *graph) {
+gcalc.addGraph(graph_name,graph);
 }
 
 

@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Gcalc.dir/Graph.cpp.obj"
   "CMakeFiles/Gcalc.dir/Parser.cpp.obj"
   "CMakeFiles/Gcalc.dir/Vertex.cpp.obj"
+  "CMakeFiles/Gcalc.dir/calc_graph.cpp.obj"
   "CMakeFiles/Gcalc.dir/main.cpp.obj"
   "Gcalc.exe"
   "Gcalc.exe.manifest"

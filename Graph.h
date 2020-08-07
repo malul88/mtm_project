@@ -35,6 +35,10 @@ public:
 
     bool isContain(std::string vertex);
 
+    void addVertex(std::string vertex);
+
+    void addEdge(std::pair<std::string,std::string> edge);
+
     friend std::ostream &operator<<(std::ostream &os, const Graph &graph){
         std::set<std::string>::iterator it = graph.vertexes.begin();
         for (;it!=graph.vertexes.end();it++){

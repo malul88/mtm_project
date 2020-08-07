@@ -304,6 +304,33 @@ Vertex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Vertex.cpp.s
 .PHONY : Vertex.cpp.s
 
+calc_graph.obj: calc_graph.cpp.obj
+
+.PHONY : calc_graph.obj
+
+# target to build an object file
+calc_graph.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/calc_graph.cpp.obj
+.PHONY : calc_graph.cpp.obj
+
+calc_graph.i: calc_graph.cpp.i
+
+.PHONY : calc_graph.i
+
+# target to preprocess a source file
+calc_graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/calc_graph.cpp.i
+.PHONY : calc_graph.cpp.i
+
+calc_graph.s: calc_graph.cpp.s
+
+.PHONY : calc_graph.s
+
+# target to generate assembly for a file
+calc_graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/calc_graph.cpp.s
+.PHONY : calc_graph.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -358,6 +385,9 @@ help:
 	@echo ... Vertex.obj
 	@echo ... Vertex.i
 	@echo ... Vertex.s
+	@echo ... calc_graph.obj
+	@echo ... calc_graph.i
+	@echo ... calc_graph.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

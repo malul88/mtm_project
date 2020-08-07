@@ -32,7 +32,7 @@ public:
 
     bool checkIfEmpty();
 
-    bool checkVertexName(std::string vertex);
+    static bool checkVertexName(std::string vertex);
 
 
 

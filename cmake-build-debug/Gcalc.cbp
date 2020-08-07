@@ -116,6 +116,12 @@
 		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h">
 			<Option target="Gcalc"/>
 		</Unit>
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/calc_graph.cpp">
+			<Option target="Gcalc"/>
+		</Unit>
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/calc_graph.h">
+			<Option target="Gcalc"/>
+		</Unit>
 		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/main.cpp">
 			<Option target="Gcalc"/>
 		</Unit>

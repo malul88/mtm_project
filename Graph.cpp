@@ -79,5 +79,14 @@ bool Graph::isContain(std::string vertex) {
     return vertexes.isContain(vertex);
 }
 
+void Graph::addVertex(std::string vertex) {
+vertexes.addVertex(vertex);
+}
+
+void Graph::addEdge(std::pair<std::string, std::string> edge) {
+    edges.addEdge(edge);
+
+}
+
 
 #pragma clang diagnostic pop

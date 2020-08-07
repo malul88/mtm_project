@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/nhfh7/CLionProjects/Gcalc/Graph.cpp" "C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/CMakeFiles/Gcalc.dir/Graph.cpp.obj"
   "C:/Users/nhfh7/CLionProjects/Gcalc/Parser.cpp" "C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/CMakeFiles/Gcalc.dir/Parser.cpp.obj"
   "C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.cpp" "C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/CMakeFiles/Gcalc.dir/Vertex.cpp.obj"
+  "C:/Users/nhfh7/CLionProjects/Gcalc/calc_graph.cpp" "C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/CMakeFiles/Gcalc.dir/calc_graph.cpp.obj"
   "C:/Users/nhfh7/CLionProjects/Gcalc/main.cpp" "C:/Users/nhfh7/CLionProjects/Gcalc/cmake-build-debug/CMakeFiles/Gcalc.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

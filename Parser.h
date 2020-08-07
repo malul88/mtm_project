@@ -31,6 +31,7 @@ public:
 
     Graph complement(std::string basicString);
 
+
     Graph multipleOperand(std::string basicString);
 
     Graph binaryExpression(std::vector<char> vec_operands,std::vector<std::string> vec_var); // create new func
@@ -50,6 +51,10 @@ public:
     Graph gProduct(std::string basicString, std::string basicString1);
 
     Graph gProduct(Graph& g1,Graph& g2);
+
+    void addGraph(std::string graph_name, Graph* graph);
+
+//    Graph stringToGraph(std::string string); //yoav_func
 };
 
 
