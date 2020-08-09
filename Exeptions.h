@@ -41,7 +41,7 @@ public:
         const char* what() const noexcept ;
     };
 
-    class OutOfRange : public ParserExceptions {
+    class CantOpenFile : public ParserExceptions {
     public:
         const char* what() const noexcept ;
     };

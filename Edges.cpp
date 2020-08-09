@@ -52,6 +52,10 @@ bool Edges::checkIfEmpty() {
     return edges.empty();
 }
 
+int Edges::size() {
+    return edges.size();
+}
+
 
 Edges operator+(const Edges &edges1, const Edges &edges2) {
     Edges result(edges1);

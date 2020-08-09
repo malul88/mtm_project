@@ -27,3 +27,7 @@ const char *WrongVertexName::what() const noexcept {
 const char *WrongGraphName::what() const noexcept {
     return "Error : Wrong Graph Name";
 }
+
+const char *CantOpenFile::what() const noexcept {
+    return "Error : Cannot Open File";
+}

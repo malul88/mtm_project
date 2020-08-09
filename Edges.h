@@ -32,6 +32,7 @@ public:
 
     bool checkIfEmpty();
 
+    int size();
 };
 
 Edges operator+(const Edges &edges1, const Edges &edges2);

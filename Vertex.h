@@ -35,8 +35,7 @@ public:
     static bool checkVertexName(std::string vertex);
 
 
-
-
+    int size();
 };
 
 Vertex operator+(const Vertex &vertex1, const Vertex &vertex2);

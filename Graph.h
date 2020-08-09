@@ -2,7 +2,9 @@
 #ifndef GCALC_GRAPH_H
 #define GCALC_GRAPH_H
 #include <iostream>
+#include <string.h>
 #include <set>
+#include <fstream>
 #include <utility>
 #include "Vertex.h"
 #include "Edges.h"
@@ -53,12 +55,7 @@ public:
     bool checkIfEmpty();
 
 
-
-
-
-
-
-
+    void WriteGraphToFile(Graph &graph, std::string basicString);
 };
 
 Graph operator+(const Graph &graph1, const Graph &graph2);

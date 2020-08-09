@@ -75,6 +75,10 @@ bool Vertex::checkVertexName(std::string vertex) {
     return stack.empty();
 }
 
+int Vertex::size() {
+    return vertexes.size();
+}
+
 Vertex operator+(const Vertex &vertex1, const Vertex &vertex2){
     Vertex result(vertex1);
     std::set<std::string>::iterator it = vertex2.begin();

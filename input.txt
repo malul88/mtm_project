@@ -7,3 +7,9 @@ g8  =g2 *g3  + {x1,x2 | <x1,x2> } ^!g3 +{x1,x3 | <x1,x3> }
 
 g1 = { x1,x2,x3 | <x1,x2>, <x1,x3> , <x2,x3> }
 g2 = g1 + { x4,x5 | <x4,x5> }
+
+Gcalc>g1 = { x1,x2,x3 | <x1,x2>, <x1,x3>  }
+Gcalc>g2 = g1 + { x4,x5 | <x4,x5> }
+Gcalc>g3 = g1 +!g2
+save (g1 , binary_graph.txt )
+save (g1 , C:\Users\nhfh7\CLionProjects\Gcalc\binary_graph.gc )

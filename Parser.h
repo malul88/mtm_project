@@ -21,7 +21,7 @@ public:
 
     static bool CheckArgName(std::string basicString);
 
-    static std::string extractFirstWord(std::string &str);
+    static std::string extractFirstWord(std::basic_string<char> str);
 
     Graph* dealWithDefinition(const std::string& graph_name, std::string str, int equal);
 
@@ -57,6 +57,9 @@ public:
     void addGraph(std::string graph_name, Graph* graph);
 
 //    Graph stringToGraph(std::string string); //yoav_func
+    void writeGraphToFile(Graph &graph, std::string basicString);
+
+    Graph loadGraphFromFile(std::string basicString);
 };
 
 

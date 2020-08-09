@@ -9,7 +9,7 @@
 #include "Parser.h"
 using namespace std;
 
-int main() {
+int main(int argc, char* argv[]) {
 
 //    Vertex v1;
 //    v1.addVertex("1");

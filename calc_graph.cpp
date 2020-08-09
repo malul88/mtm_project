@@ -1,30 +1,35 @@
 
 #include "calc_graph.h"
 
-
-Graph *calc_graph::create() {
-    //std::string graph_name = 'g'+std::to_string(counter++);
+using std::string;
+Graph *create() {
+    //string graph_name = 'g'+std::to_string(counter++);
     Graph *g1 = new Graph;
     return g1;
 }
 
-void calc_graph::destroy(Graph &graph) {
+void destroy(Graph &graph) {
     delete &graph;
 }
 
-Graph &calc_graph::addVertex(Graph &graph, std::string vertex) {
+Graph &addVertex(Graph &graph, const char* vertex) {
+    graph.addVertex(string(vertex));
+    return graph;
+}
+
+Graph &addVertex(Graph &graph, string vertex) {
     graph.addVertex(vertex);
     return graph;
 }
 
-Graph &calc_graph::addEdge(Graph &graph, std::string vertex1, std::string vertex2) {
+Graph &addEdge(Graph &graph, string vertex1, string vertex2) {
     if (!Vertex::checkVertexName(vertex1) || !Vertex::checkVertexName(vertex2)){
         throw WrongVertexName();
     }
     if (!graph.isContain(vertex1) || !graph.isContain(vertex2)){
         throw ArgumentNotFound();
     }
-    std::pair<std::string, std::string> edge;
+    std::pair<string, string> edge;
     edge.first =vertex1;
     edge.second = vertex2;
     graph.addEdge(edge);
@@ -32,33 +37,48 @@ Graph &calc_graph::addEdge(Graph &graph, std::string vertex1, std::string vertex
 
 }
 
-void calc_graph::disp(Graph &graph) {
+Graph& addEdge(Graph& graph,  const char* vertex1,  const char* vertex2) {
+    if (!Vertex::checkVertexName(vertex1) || !Vertex::checkVertexName(vertex2)){
+        throw WrongVertexName();
+    }
+    if (!graph.isContain(vertex1) || !graph.isContain(vertex2)){
+        throw ArgumentNotFound();
+    }
+    std::pair<string, string> edge;
+    edge.first =vertex1;
+    edge.second = vertex2;
+    graph.addEdge(edge);
+    return graph;
+
+}
+
+void disp(Graph &graph) {
     std::cout << graph;
 }
 
 
 
-Graph &calc_graph::graphUnion(Graph &graph_in1, Graph &graph_in2, Graph &graph_out) {
+Graph &graphUnion(Graph &graph_in1, Graph &graph_in2, Graph &graph_out) {
     graph_out = graph_in1 + graph_in2;
     return graph_out;
 }
 
-Graph &calc_graph::graphIntersection(Graph &graph_in1, Graph &graph_in2, Graph &graph_out) {
+Graph &graphIntersection(Graph &graph_in1, Graph &graph_in2, Graph &graph_out) {
     graph_out = graph_in1 ^ graph_in2;
     return graph_out;
 }
 
-Graph &calc_graph::graphDifference(Graph &graph_in1, Graph &graph_in2, Graph &graph_out) {
+Graph &graphDifference(Graph &graph_in1, Graph &graph_in2, Graph &graph_out) {
     graph_out = graph_in1 - graph_in2;
     return graph_out;
 }
 
-Graph &calc_graph::graphProduct(Graph &graph_in1, Graph &graph_in2, Graph &graph_out) {
+Graph &graphProduct(Graph &graph_in1, Graph &graph_in2, Graph &graph_out) {
     graph_out = graph_in1*graph_in2;
     return graph_out;
 }
 
-Graph &calc_graph::graphComplement(Graph &graph_in, Graph &graph_out) {
+Graph &graphComplement(Graph &graph_in, Graph &graph_out) {
     graph_out = !graph_in;
     return graph_out;
 }

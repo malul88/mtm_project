@@ -27,7 +27,11 @@ map
 C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
 iostream
 -
+string.h
+-
 set
+-
+fstream
 -
 utility
 -
@@ -43,8 +47,8 @@ sstream
 -
 Parser.h
 C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h
-Graph.h
-C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
+fstream
+-
 algorithm
 -
 
