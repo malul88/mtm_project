@@ -1,5 +1,3 @@
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "modernize-use-auto"
 
 #ifndef GCALC_GRAPH_H
 #define GCALC_GRAPH_H
@@ -78,4 +76,3 @@ Graph operator!(const Graph &graph1);
 
 #endif //GCALC_GRAPH_H
 
-#pragma clang diagnostic pop

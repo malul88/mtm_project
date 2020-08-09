@@ -60,4 +60,5 @@ Graph &calc_graph::graphProduct(Graph &graph_in1, Graph &graph_in2, Graph &graph
 
 Graph &calc_graph::graphComplement(Graph &graph_in, Graph &graph_out) {
     graph_out = !graph_in;
+    return graph_out;
 }

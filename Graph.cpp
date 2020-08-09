@@ -1,5 +1,3 @@
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "modernize-use-auto"
 
 #include "Graph.h"
 
@@ -89,4 +87,3 @@ void Graph::addEdge(std::pair<std::string, std::string> edge) {
 }
 
 
-#pragma clang diagnostic pop

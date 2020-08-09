@@ -1,5 +1,4 @@
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "performance-inefficient-string-concatenation"
+
 
 
 #include "Edges.h"
@@ -103,4 +102,3 @@ Edges operator*(const Edges &edges1, const Edges &edges2) {
 
 }
 
-#pragma clang diagnostic pop

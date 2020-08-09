@@ -1,5 +1,4 @@
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "modernize-use-auto"
+
 
 #ifndef GCALC_GCALC_H
 #define GCALC_GCALC_H
@@ -34,4 +33,3 @@ public:
 
 #endif //GCALC_GCALC_H
 
-#pragma clang diagnostic pop

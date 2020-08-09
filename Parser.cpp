@@ -1,6 +1,3 @@
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "modernize-use-auto"
-#pragma ide diagnostic ignored "cppcoreguidelines-narrowing-conversions"
 
 #include <cstring>
 #include <sstream>
@@ -22,12 +19,12 @@ int Parser::checkCmd(std::string str1) {
 
 
     if (token2 == "print") {
-        int firstB = temp.find('(');
-        int lastB = temp.find(')') - firstB - 1;
+        size_t firstB = temp.find('(');
+        size_t lastB = temp.find(')') - firstB - 1;
         std::string var = temp.substr(firstB + 1, lastB);
         std::string operators = "+^-*!";
         char operand = '?';
-        int find_operand = -2;
+        size_t find_operand = -2;
         for (char i :operators) {
             find_operand = var.find(i);
             if (find_operand != std::string::npos) {
@@ -50,8 +47,8 @@ int Parser::checkCmd(std::string str1) {
             throw IllegalArgument();
         }
     } else if (token2 == "delete") {
-        int firstB = temp.find('(');
-        int lastB = temp.find(')') - firstB - 1;
+        size_t firstB = temp.find('(');
+        size_t lastB = temp.find(')') - firstB - 1;
         std::string var = temp.substr(firstB + 1, lastB);
         bool valid = CheckArgName(var);
         if (valid) {
@@ -71,7 +68,7 @@ int Parser::checkCmd(std::string str1) {
         gcalc.clearCalc();
         return 1;
     }
-    int equal = temp.find_first_of('=');
+    size_t equal = temp.find_first_of('=');
     if (equal != std::string::npos) {
         dealWithEqual(token2, temp, equal);
         return 0;
@@ -84,7 +81,7 @@ int Parser::checkCmd(std::string str1) {
 bool Parser::CheckArgName(std::string str) {
     int first_char = -1;
     bool valid = true;
-    for (int i = 0; i < str.size(); ++i) {
+    for (size_t i = 0; i < str.size(); ++i) {
         if (str[i] != ' ' && first_char == -1) {
             first_char = i;
             if (!isalpha(str[i])) {
@@ -95,7 +92,7 @@ bool Parser::CheckArgName(std::string str) {
             valid = false;
         }
         if (str[i] == ' ' && first_char != -1) {
-            for (int j = i; j < str.size(); ++j) {
+            for (size_t j = i; j < str.size(); ++j) {
                 if (str[j] != ' ') {
                     valid = false;
                     break;
@@ -107,11 +104,11 @@ bool Parser::CheckArgName(std::string str) {
 }
 
 std::string Parser::extractFirstWord(std::string &str) {
-    int first = 0, last = 0;
-    for (int i = 0; i < str.size(); ++i) {
+    size_t first = 0, last = 0;
+    for (size_t i = 0; i < str.size(); ++i) {
         if (str[i] != ' ') {
             first = i;
-            for (int j = i; j < str.size(); ++j) {
+            for (size_t j = i; j < str.size(); ++j) {
                 last = j + 1;
                 if (str[j] == ' ' || str[j] == '=' || str[j] == '{') {
                     last = j;
@@ -130,13 +127,13 @@ Graph *Parser::dealWithDefinition(const std::string &graph_name, std::string str
 //        throw WrongGraphName();
 //    }
     std::string right_object = str.substr(str.find('{'));
-    int last_pos = right_object.find('|') - 1;
+    size_t last_pos = right_object.find('|') - 1;
     if (last_pos == std::string::npos - 1) {
         last_pos = right_object.find('}') - 1;
     }
     std::string vertexes = right_object.substr(1, last_pos);
-    int first = right_object.find('|') + 1;
-    int last = right_object.find('}') - first;
+    size_t first = right_object.find('|') + 1;
+    size_t last = right_object.find('}') - first;
     std::string edge = right_object.substr(first, last);
     Vertex vertex1;
     Edges edges1;
@@ -169,7 +166,7 @@ Graph *Parser::dealWithDefinition(const std::string &graph_name, std::string str
         edge_temp.push_back(substring);
     }
 
-    for (int i = 0; i < edge_temp.size() - 1; ++i) {
+    for (size_t i = 0; i < edge_temp.size() - 1; ++i) {
         std::string temp = edge_temp.at(i).substr(edge_temp.at(i).find('<'));
         std::string first1 = temp.substr(0, temp.find(',') + 1);
         std::string second = temp.substr(temp.find(',') + 1);
@@ -208,15 +205,10 @@ void Parser::dealWithEqual(std::string left_o, std::string str, int equal) {
     std::string left_object = str.substr(0, equal - 1);
     left_object = extractFirstWord(left_object);
     if (!CheckArgName(left_object)) {
+        delete g1;
         throw WrongGraphName();
     }
-    int first_letter = right_object.find_first_of('{');
-//    if (first_letter != std::string::npos) {
-//        g1 = dealWithDefinition(left_o, str, equal);
-//    } else {
-//        *g1 = multipleOperand(right_object);
-////        }
-//    }
+    // size_t first_letter = right_object.find_first_of('{');
     *g1 = multipleOperand(right_object);
     if (gcalc.isContain(left_object)) {
         gcalc.getGraph(left_object) = *g1;
@@ -227,7 +219,7 @@ void Parser::dealWithEqual(std::string left_o, std::string str, int equal) {
 }
 
 char Parser::firstLetter(std::string str) {
-    int i = 0;
+    size_t i = 0;
     for (; i < str.size(); i++) {
         if (str[i] != ' ') {
             break;
@@ -255,7 +247,7 @@ Graph Parser::complement(std::string str) {
     if (!CheckArgName(str)) {
         throw WrongGraphName();
     }
-    int last = str.find(' ');
+    size_t last = str.find(' ');
     str = str.substr(0, last);
     Graph g1 = gcalc.getGraph(str);
     return !g1;
@@ -272,24 +264,24 @@ Graph Parser::multipleOperand(std::string basicString) {
     std::vector<char> vec_operands;
     std::vector<std::string> vec_var;
     std::string var = basicString;
-    basicString+='+';
+    basicString += '+';
     int length = 0;
     int first_index = -1;
-    int next = basicString.size()+1;
+    size_t next = basicString.size() + 1;
     bool visit = true;
-    for (int i = 0; i < basicString.size(); ++i) {
-        if(basicString[i] == '{') {
+    for (size_t i = 0; i < basicString.size(); ++i) {
+        if (basicString[i] == '{') {
             std::string temp = std::to_string(counter++);
-            Graph* g_temp = dealWithDefinition(temp ,basicString.substr(i),0); // add delete to end
-            gcalc_temp.addGraph(temp ,g_temp);
-            if (basicString.find_first_of('+',i) != -1 && basicString.find_first_of('+',i) != basicString.size())
-                next = basicString.find_first_of('+',i);
-            if (basicString.find_first_of('*',i) != -1 ) next = std::min<int>(next,basicString.find_first_of('*',i));
-            if (basicString.find_first_of('^',i) != -1 ) next = std::min<int>(next,basicString.find_first_of('^',i));
-            if (basicString.find_first_of('-',i) != -1 )next = std::min<int>(next,basicString.find_first_of('-',i));
+            Graph *g_temp = dealWithDefinition(temp, basicString.substr(i), 0); // add delete to end
+            gcalc_temp.addGraph(temp, g_temp);
+            if (basicString.find_first_of('+', i) != std::string::npos && basicString.find_first_of('+', i) != basicString.size())
+                next = basicString.find_first_of('+', i);
+            if (basicString.find_first_of('*', i) != std::string::npos) next = std::min<int>(next, basicString.find_first_of('*', i));
+            if (basicString.find_first_of('^', i) != std::string::npos) next = std::min<int>(next, basicString.find_first_of('^', i));
+            if (basicString.find_first_of('-', i) != std::string::npos)next = std::min<int>(next, basicString.find_first_of('-', i));
             vec_var.push_back(temp);
-            i = next -1;
-            visit =false;
+            i = next - 1;
+            visit = false;
             continue;
         }
         if (basicString[i] != '+' && basicString[i] != '-' && basicString[i] != '^' && basicString[i] != '!'
@@ -301,8 +293,8 @@ Graph Parser::multipleOperand(std::string basicString) {
         }
         if (basicString[i] == '+' || basicString[i] == '-' || basicString[i] == '^'
             || basicString[i] == '*') {
-            if(i!= basicString.size()-1)            vec_operands.push_back(basicString[i]);
-            if(visit) {
+            if (i != basicString.size() - 1) vec_operands.push_back(basicString[i]);
+            if (visit) {
                 var = var.substr(first_index, length);
                 first_index = -1;
                 vec_var.push_back(var);
@@ -314,13 +306,11 @@ Graph Parser::multipleOperand(std::string basicString) {
         }
         if (basicString[i] == '!') vec_operands.push_back(basicString[i]);;
     }
-//    var = var.substr(first_index, length);
-//    vec_var.push_back(var);
     return binaryExpression(vec_operands, vec_var);//todo add temp_vec
 }
 
 
-Graph Parser::binaryExpression(std::vector<char> vec_operands, std::vector<std::string> vec_var ) {
+Graph Parser::binaryExpression(std::vector<char> vec_operands, std::vector<std::string> vec_var) {
     Graph g1;
     Graph g_temp_com;
     std::string operands = "+^-*!";
@@ -328,25 +318,27 @@ Graph Parser::binaryExpression(std::vector<char> vec_operands, std::vector<std::
     int var_index = 0;
     bool com = false;
     bool first_com = false;
-    bool is_temp  =false;
+    bool is_temp = false;
     std::string graph_name;
     Graph graph_temp;
-    for (int i = 0; i < vec_operands.size(); ++i) {
+    if (vec_operands.empty()) {
+        return gcalc_temp.getGraph(vec_var[0]);
+    }
+    for (size_t i = 0; i < vec_operands.size(); ++i) {
         operand = vec_operands.at(i);
         Graph gtemp;
         is_temp = std::isdigit((vec_var[var_index])[0]); // need to check TODO 
-        if(is_temp){
-             graph_temp = gcalc_temp.getGraph(vec_var[var_index]);
+        if (is_temp) {
+            graph_temp = gcalc_temp.getGraph(vec_var[var_index]);
         }
 
         if (!is_temp && !CheckArgName(vec_var[var_index])) {
             throw WrongGraphName();
         }
         if (i + 1 < vec_operands.size() && vec_operands.at(i + 1) == '!') {
-            if(is_temp) {
+            if (is_temp) {
                 g_temp_com = !graph_temp;
-            }
-            else{
+            } else {
                 g_temp_com = complement(vec_var[var_index]);
             }
             com = true;
@@ -355,78 +347,164 @@ Graph Parser::binaryExpression(std::vector<char> vec_operands, std::vector<std::
         if (operand == '+') {
             if (com && gcalc.isContain(vec_var[var_index])) { // +!
                 g1 = gUnion(g1, g_temp_com);
-            }else if(com && is_temp ){
+                var_index++;
+            } else if (com && is_temp) {
                 g1 = gUnion(g1, g_temp_com);
-            }else if (first_com && gcalc.isContain(vec_var[var_index])) { // ! first operator
+                var_index++;
+            } else if (first_com && gcalc.isContain(vec_var[var_index])) { // ! first operator
                 g1 = gUnion(gcalc.getGraph(vec_var[var_index]), g1);
-            }else if (first_com && is_temp){
+                var_index++;
+            } else if (first_com && is_temp) {
                 g1 = gUnion(graph_temp, g1);
-            }
-            else if (i == 0 && gcalc.isContain(vec_var[var_index]) && gcalc.isContain(vec_var[var_index + 1])) {
+                var_index++;
+            } else if (i == 0 && gcalc.isContain(vec_var[var_index]) && gcalc.isContain(vec_var[var_index + 1])) {
                 gtemp = gUnion(vec_var[var_index], vec_var[var_index + 1]); // first iter
-                g1 = gtemp + g1;
+                g1 = gtemp;
                 var_index += 2;
-            }else if (i == 0 && is_temp){
-                is_temp = std::isdigit((vec_var[var_index+1])[0]);
-                if(!is_temp){
-                    gtemp = gUnion(graph_temp, gcalc.getGraph(vec_var[var_index+1])); // first iter
+            }//add first not temp second temp
+            else if (i == 0 && is_temp) {
+                is_temp = std::isdigit((vec_var[var_index + 1])[0]);
+                if (!is_temp) {
+                    gtemp = gUnion(graph_temp, gcalc.getGraph(vec_var[var_index + 1])); // first iter
+                } else {
+                    gtemp = gUnion(graph_temp, gcalc_temp.getGraph(vec_var[var_index + 1])); // first iter
                 }
-                else{
-                    gtemp = gUnion(graph_temp, gcalc_temp.getGraph(vec_var[var_index+1])); // first iter
-                }
-                g1 = gtemp + g1;
+                g1 = gtemp;
                 var_index += 2;
-            }else if (gcalc.isContain(vec_var[var_index])) { // some iter
+            } else if (i == 0 && std::isdigit((vec_var[var_index + 1])[0]) && gcalc.isContain(vec_var[var_index])) {
+                gtemp = gUnion(gcalc.getGraph(vec_var[var_index]), gcalc_temp.getGraph(vec_var[var_index + 1])); // first iter
+                var_index += 2;
+
+            } else if (gcalc.isContain(vec_var[var_index])) { // some iter
                 gtemp = gUnion(gcalc.getGraph(vec_var[var_index]), g1);
-                g1 = gtemp + g1;
+                g1 = gtemp;
                 var_index++;
-            }else if(is_temp){
-                gtemp = gUnion(gcalc_temp.getGraph(vec_var[var_index]), g1);
-                g1 = gtemp + g1;
+            } else if (is_temp) {
+                gtemp = gUnion(graph_temp, g1);
+                g1 = gtemp;
                 var_index++;
-            }
-            else {
+            } else {
                 throw ArgumentNotFound();
             }
         } else if (operand == '^') {
-            if (com && gcalc.isContain(vec_var[var_index])) {
+            if (com && gcalc.isContain(vec_var[var_index])) { // +!
                 g1 = gIntersection(g1, g_temp_com);
-            } else if (first_com && gcalc.isContain(vec_var[var_index])) {
+                var_index++;
+            } else if (com && is_temp) {
+                g1 = gIntersection(g1, g_temp_com);
+                var_index++;
+            } else if (first_com && gcalc.isContain(vec_var[var_index])) { // ! first operator
                 g1 = gIntersection(gcalc.getGraph(vec_var[var_index]), g1);
+                var_index++;
+            } else if (first_com && is_temp) {
+                g1 = gIntersection(graph_temp, g1);
+                var_index++;
             } else if (i == 0 && gcalc.isContain(vec_var[var_index]) && gcalc.isContain(vec_var[var_index + 1])) {
-                gtemp = gIntersection(vec_var[var_index], vec_var[var_index + 1]);
+                gtemp = gIntersection(vec_var[var_index], vec_var[var_index + 1]); // first iter
                 g1 = gtemp;
                 var_index += 2;
-            } else if (gcalc.isContain(vec_var[var_index])) {
-                g1 = gIntersection(gcalc.getGraph(vec_var[var_index]), g1);
+            } else if (i == 0 && is_temp) {
+                is_temp = std::isdigit((vec_var[var_index + 1])[0]);
+                if (!is_temp) {
+                    gtemp = gIntersection(graph_temp, gcalc.getGraph(vec_var[var_index + 1])); // first iter
+                } else {
+                    gtemp = gIntersection(graph_temp, gcalc_temp.getGraph(vec_var[var_index + 1])); // first iter
+                }
+                g1 = gtemp;
+                var_index += 2;
+            } else if (i == 0 && std::isdigit((vec_var[var_index + 1])[0]) && gcalc.isContain(vec_var[var_index])) {
+                gtemp = gIntersection(gcalc.getGraph(vec_var[var_index]), gcalc_temp.getGraph(vec_var[var_index + 1])); // first iter
+                var_index += 2;
+
+            }else if (gcalc.isContain(vec_var[var_index])) { // some iter
+                gtemp = gIntersection(gcalc.getGraph(vec_var[var_index]), g1);
+                g1 = gtemp;
+                var_index++;
+            } else if (is_temp) {
+                gtemp = gIntersection(graph_temp, g1);
+                g1 = gtemp;
                 var_index++;
             } else {
                 throw ArgumentNotFound();
             }
         } else if (operand == '-') {
-            if (com && gcalc.isContain(vec_var[var_index])) {
+            if (com && gcalc.isContain(vec_var[var_index])) { // +!
                 g1 = gDifference(g1, g_temp_com);
-            } else if (first_com && gcalc.isContain(vec_var[var_index])) {
+                var_index++;
+            } else if (com && is_temp) {
+                g1 = gDifference(g1, g_temp_com);
+                var_index++;
+            } else if (first_com && gcalc.isContain(vec_var[var_index])) { // ! first operator
                 g1 = gDifference(g1, gcalc.getGraph(vec_var[var_index]));
+                var_index++;
+            } else if (first_com && is_temp) {
+                g1 = gDifference(g1, graph_temp);
+                var_index++;
             } else if (i == 0 && gcalc.isContain(vec_var[var_index]) && gcalc.isContain(vec_var[var_index + 1])) {
-                g1 = gDifference(vec_var[var_index], vec_var[var_index + 1]);
+                gtemp = gDifference(vec_var[var_index], vec_var[var_index + 1]); // first iter
+                g1 = gtemp;
                 var_index += 2;
-            } else if (gcalc.isContain(vec_var[var_index])) {
-                g1 = gDifference(g1, gcalc.getGraph(vec_var[var_index]));
+            } else if (i == 0 && is_temp) {
+                is_temp = std::isdigit((vec_var[var_index + 1])[0]);
+                if (!is_temp) {
+                    gtemp = gDifference(graph_temp, gcalc.getGraph(vec_var[var_index + 1])); // first iter
+                } else {
+                    gtemp = gDifference(graph_temp, gcalc_temp.getGraph(vec_var[var_index + 1])); // first iter
+                }
+                g1 = gtemp;
+                var_index += 2;
+            } else if (i == 0 && std::isdigit((vec_var[var_index + 1])[0]) && gcalc.isContain(vec_var[var_index])) {
+                gtemp = gDifference(gcalc.getGraph(vec_var[var_index]), gcalc_temp.getGraph(vec_var[var_index + 1])); // first iter
+                var_index += 2;
+
+            }else if (gcalc.isContain(vec_var[var_index])) { // some iter
+                gtemp = gDifference(g1, gcalc.getGraph(vec_var[var_index]));
+                g1 = gtemp;
+                var_index++;
+            } else if (is_temp) {
+                gtemp = gDifference(g1, graph_temp);
+                g1 = gtemp;
                 var_index++;
             } else {
                 throw ArgumentNotFound();
             }
         } else if (operand == '*') {
-            if (com && gcalc.isContain(vec_var[var_index])) {
+            if (com && gcalc.isContain(vec_var[var_index])) { // +!
                 g1 = gProduct(g1, g_temp_com);
-            } else if (first_com && gcalc.isContain(vec_var[var_index])) {
+                var_index++;
+            } else if (com && is_temp) {
+                g1 = gProduct(g1, g_temp_com);
+                var_index++;
+            } else if (first_com && gcalc.isContain(vec_var[var_index])) { // ! first operator
                 g1 = gProduct(g1, gcalc.getGraph(vec_var[var_index]));
+                var_index++;
+            } else if (first_com && is_temp) {
+                g1 = gProduct(g1, graph_temp);
+                var_index++;
             } else if (i == 0 && gcalc.isContain(vec_var[var_index]) && gcalc.isContain(vec_var[var_index + 1])) {
-                g1 = gProduct(vec_var[var_index], vec_var[var_index + 1]);
+                gtemp = gProduct(vec_var[var_index], vec_var[var_index + 1]); // first iter
+                g1 = gtemp;
                 var_index += 2;
-            } else if (gcalc.isContain(vec_var[var_index])) {
-                g1 = gProduct(g1, gcalc.getGraph(vec_var[var_index]));
+            } else if (i == 0 && is_temp) {
+                is_temp = std::isdigit((vec_var[var_index + 1])[0]);
+                if (!is_temp) {
+                    gtemp = gProduct(graph_temp, gcalc.getGraph(vec_var[var_index + 1])); // first iter
+                } else {
+                    gtemp = gProduct(graph_temp, gcalc_temp.getGraph(vec_var[var_index + 1])); // first iter
+                }
+                g1 = gtemp;
+                var_index += 2;
+            } else if (i == 0 && std::isdigit((vec_var[var_index + 1])[0]) && gcalc.isContain(vec_var[var_index])) {
+                gtemp = gProduct(gcalc.getGraph(vec_var[var_index]), gcalc_temp.getGraph(vec_var[var_index + 1])); // first iter
+                var_index += 2;
+
+            }else if (gcalc.isContain(vec_var[var_index])) { // some iter
+                gtemp = gProduct(g1, gcalc.getGraph(vec_var[var_index]));
+                g1 = gtemp;
+                var_index++;
+            } else if (is_temp) {
+                gtemp = gProduct(g1, graph_temp);
+                g1 = gtemp;
                 var_index++;
             } else {
                 throw ArgumentNotFound();
@@ -437,6 +515,12 @@ Graph Parser::binaryExpression(std::vector<char> vec_operands, std::vector<std::
                 g1 = g1 + gtemp;
                 var_index++;
                 first_com = true;
+
+            } else if (is_temp) {
+                g1 = g1 + !graph_temp; // check if we need +g1 or not
+                var_index++;
+                first_com = true;
+
             } else {
                 throw ArgumentNotFound();
             }
@@ -444,7 +528,8 @@ Graph Parser::binaryExpression(std::vector<char> vec_operands, std::vector<std::
     }
 
 
-    return g1;
+    return
+            g1;
 }
 
 
@@ -562,8 +647,7 @@ Graph Parser::gProduct(Graph &g1, Graph &g2) {
 }
 
 void Parser::addGraph(std::string graph_name, Graph *graph) {
-gcalc.addGraph(graph_name,graph);
+    gcalc.addGraph(graph_name, graph);
 }
 
 
-#pragma clang diagnostic pop

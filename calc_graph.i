@@ -3,9 +3,10 @@
 %{
 #include "calc_graph.h"
 %}
-include "calc_graph.h"
 
 
+    class calc_graph {
+public:
     Graph* create();
 
     void destroy(Graph& graph);
@@ -25,3 +26,6 @@ include "calc_graph.h"
     Graph& graphProduct(Graph &graph_in1, Graph &graph_in2, Graph &graph_out);
 
     Graph& graphComplement(Graph &graph_in, Graph &graph_out);
+
+
+};

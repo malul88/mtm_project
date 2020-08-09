@@ -1,5 +1,3 @@
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "modernize-use-auto"
 
 
 #include "Vertex.h"
@@ -62,7 +60,7 @@ bool Vertex::checkIfEmpty() {
 
 bool Vertex::checkVertexName(std::string vertex) {
     std::stack<char> stack;
-    for (int i = 0; i < vertex.size(); ++i) {
+    for (size_t i = 0; i < vertex.size(); ++i) {
         if(!isalnum(vertex.at(i)) && vertex.at(i) != '[' &&
         vertex.at(i) != ']' && vertex.at(i) != ';'){
             return false;
@@ -128,4 +126,3 @@ Vertex operator*(const Vertex &vertex1,const Vertex &vertex2){
 
 
 
-#pragma clang diagnostic pop
