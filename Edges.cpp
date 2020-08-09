@@ -94,7 +94,7 @@ Edges operator*(const Edges &edges1, const Edges &edges2) {
         for (; it2!=edges2.end(); ++it2) {
             std::string first2 = it2->first;
             std::string second2 = it2->second;
-            std::pair <std::string,std::string> p  (first1 +";" + first2,second1 + ";" +second2);
+            std::pair <std::string,std::string> p  ('[' +first1 +";" + first2 + ']', '[' + second1 + ";" +second2 + ']');
             result.addEdge(p);
         }
     }

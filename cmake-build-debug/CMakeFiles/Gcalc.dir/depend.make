@@ -32,6 +32,15 @@ CMakeFiles/Gcalc.dir/Vertex.cpp.obj: ../Exeptions.h
 CMakeFiles/Gcalc.dir/Vertex.cpp.obj: ../Vertex.cpp
 CMakeFiles/Gcalc.dir/Vertex.cpp.obj: ../Vertex.h
 
+CMakeFiles/Gcalc.dir/calc_graph.cpp.obj: ../Edges.h
+CMakeFiles/Gcalc.dir/calc_graph.cpp.obj: ../Exeptions.h
+CMakeFiles/Gcalc.dir/calc_graph.cpp.obj: ../Gcalc.h
+CMakeFiles/Gcalc.dir/calc_graph.cpp.obj: ../Graph.h
+CMakeFiles/Gcalc.dir/calc_graph.cpp.obj: ../Parser.h
+CMakeFiles/Gcalc.dir/calc_graph.cpp.obj: ../Vertex.h
+CMakeFiles/Gcalc.dir/calc_graph.cpp.obj: ../calc_graph.cpp
+CMakeFiles/Gcalc.dir/calc_graph.cpp.obj: ../calc_graph.h
+
 CMakeFiles/Gcalc.dir/main.cpp.obj: ../Edges.h
 CMakeFiles/Gcalc.dir/main.cpp.obj: ../Exeptions.h
 CMakeFiles/Gcalc.dir/main.cpp.obj: ../Gcalc.h

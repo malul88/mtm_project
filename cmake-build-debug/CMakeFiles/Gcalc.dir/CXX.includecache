@@ -45,6 +45,8 @@ Parser.h
 C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h
 Graph.h
 C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
+algorithm
+-
 
 C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h
 Gcalc.h
@@ -67,24 +69,4 @@ set
 -
 Exeptions.h
 C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
-
-C:/Users/nhfh7/CLionProjects/Gcalc/main.cpp
-iostream
--
-set
--
-map
--
-string
--
-Vertex.h
-C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
-Edges.h
-C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
-Graph.h
-C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
-Gcalc.h
-C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h
-Parser.h
-C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h
 

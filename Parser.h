@@ -12,6 +12,8 @@
 class Parser {
 private:
     Gcalc gcalc;
+    Gcalc gcalc_temp;
+    int counter = 0;
 public:
     explicit Parser( Gcalc gcalc) : gcalc(gcalc){};
 

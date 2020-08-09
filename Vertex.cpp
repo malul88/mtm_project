@@ -115,7 +115,7 @@ Vertex operator*(const Vertex &vertex1,const Vertex &vertex2){
     for (; it1!=vertex1.end(); ++it1) {
         std::set<std::string>::iterator it2 = vertex2.begin();
         for (; it2!=vertex2.end(); ++it2) {
-            std::string temp = (*it1 +";"+ *it2);
+            std::string temp = ('['+ *it1 + ';' + *it2 + ']');
             result.addVertex(temp);
         }
     }
