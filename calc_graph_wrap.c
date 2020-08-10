@@ -2961,7 +2961,7 @@ static swig_module_info swig_module = {swig_types, 3, 0, 0, 0, 0};
 #define SWIG_as_voidptrptr(a) ((void)SWIG_as_voidptr(*a),(void**)(a)) 
 
 
-#include "calc_graph.h"
+#include "graph.h"
 
 #ifdef __cplusplus
 extern "C" {

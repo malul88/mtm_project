@@ -1,6 +1,6 @@
 
 #include "Exeptions.h"
-
+using namespace std;
 const char *Exception::what() const noexcept {
     return "Error : Exception";
 }
@@ -25,9 +25,13 @@ const char *WrongVertexName::what() const noexcept {
 }
 
 const char *WrongGraphName::what() const noexcept {
-    return "Error : Wrong Graph Name";
+    return "Error : Wrong Graph1 Name";
 }
 
 const char *CantOpenFile::what() const noexcept {
     return "Error : Cannot Open File";
+}
+
+const char *VertexNotFound::what() const noexcept {
+    return "Error : VertexNotFound";
 }

@@ -67,7 +67,46 @@ except AttributeError:
     _newclass = 0
 
 
+
+def create():
+  return _graph.create()
+create = _graph.create
+
+def destroy(*args):
+  return _graph.destroy(*args)
+destroy = _graph.destroy
+
+def addVertex(*args):
+  return _graph.addVertex(*args)
+addVertex = _graph.addVertex
+
+def addEdge(*args):
+  return _graph.addEdge(*args)
+addEdge = _graph.addEdge
+
+def disp(*args):
+  return _graph.disp(*args)
+disp = _graph.disp
+
+def graphUnion(*args):
+  return _graph.graphUnion(*args)
+graphUnion = _graph.graphUnion
+
+def graphIntersection(*args):
+  return _graph.graphIntersection(*args)
+graphIntersection = _graph.graphIntersection
+
+def graphDifference(*args):
+  return _graph.graphDifference(*args)
+graphDifference = _graph.graphDifference
+
+def graphProduct(*args):
+  return _graph.graphProduct(*args)
+graphProduct = _graph.graphProduct
+
+def graphComplement(*args):
+  return _graph.graphComplement(*args)
+graphComplement = _graph.graphComplement
 # This file is compatible with both classic and new-style classes.
 
-cvar = _graph.cvar
 

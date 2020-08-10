@@ -12,19 +12,28 @@ CMakeFiles/Gcalc.dir/Gcalc.cpp.obj
  C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
  C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.cpp
  C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h
- C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
+ C:/Users/nhfh7/CLionProjects/Gcalc/Graph1.h
  C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
 CMakeFiles/Gcalc.dir/Graph.cpp.obj
  C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
  C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
- C:/Users/nhfh7/CLionProjects/Gcalc/Graph.cpp
- C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
+ C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h
+ C:/Users/nhfh7/CLionProjects/Gcalc/Graph1.h
+ C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h
+ C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
+ C:/Users/nhfh7/CLionProjects/Gcalc/graph.cpp
+ C:/Users/nhfh7/CLionProjects/Gcalc/graph.h
+CMakeFiles/Gcalc.dir/Graph1.cpp.obj
+ C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
+ C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
+ C:/Users/nhfh7/CLionProjects/Gcalc/Graph1.cpp
+ C:/Users/nhfh7/CLionProjects/Gcalc/Graph1.h
  C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
 CMakeFiles/Gcalc.dir/Parser.cpp.obj
  C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
  C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
  C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h
- C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
+ C:/Users/nhfh7/CLionProjects/Gcalc/Graph1.h
  C:/Users/nhfh7/CLionProjects/Gcalc/Parser.cpp
  C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h
  C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
@@ -32,20 +41,11 @@ CMakeFiles/Gcalc.dir/Vertex.cpp.obj
  C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
  C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.cpp
  C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
-CMakeFiles/Gcalc.dir/calc_graph.cpp.obj
- C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
- C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
- C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h
- C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
- C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h
- C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
- C:/Users/nhfh7/CLionProjects/Gcalc/calc_graph.cpp
- C:/Users/nhfh7/CLionProjects/Gcalc/calc_graph.h
 CMakeFiles/Gcalc.dir/main.cpp.obj
  C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
  C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
  C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h
- C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
+ C:/Users/nhfh7/CLionProjects/Gcalc/Graph1.h
  C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h
  C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
  C:/Users/nhfh7/CLionProjects/Gcalc/main.cpp

@@ -1,0 +1,2 @@
+Error : Wrong Graph1 Name
+Error : Argument Not Found

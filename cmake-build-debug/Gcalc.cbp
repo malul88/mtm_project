@@ -98,10 +98,10 @@
 		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Graph.cpp">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Graph1.cpp">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Graph1.h">
 			<Option target="Gcalc"/>
 		</Unit>
 		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Parser.cpp">
@@ -116,10 +116,10 @@
 		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/calc_graph.cpp">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/graph.cpp">
 			<Option target="Gcalc"/>
 		</Unit>
-		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/calc_graph.h">
+		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/graph.h">
 			<Option target="Gcalc"/>
 		</Unit>
 		<Unit filename="C:/Users/nhfh7/CLionProjects/Gcalc/main.cpp">

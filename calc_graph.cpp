@@ -1,28 +1,28 @@
 
-#include "calc_graph.h"
+#include "graph.h"
 
 using std::string;
-Graph *create() {
+Graph1 *create() {
     //string graph_name = 'g'+std::to_string(counter++);
-    Graph *g1 = new Graph;
+    Graph1 *g1 = new Graph1;
     return g1;
 }
 
-void destroy(Graph &graph) {
+void destroy(Graph1 &graph) {
     delete &graph;
 }
 
-Graph &addVertex(Graph &graph, const char* vertex) {
+Graph1 &addVertex(Graph1 &graph, const char* vertex) {
     graph.addVertex(string(vertex));
     return graph;
 }
 
-Graph &addVertex(Graph &graph, string vertex) {
+Graph1 &addVertex(Graph1 &graph, string vertex) {
     graph.addVertex(vertex);
     return graph;
 }
 
-Graph &addEdge(Graph &graph, string vertex1, string vertex2) {
+Graph1 &addEdge(Graph1 &graph, string vertex1, string vertex2) {
     if (!Vertex::checkVertexName(vertex1) || !Vertex::checkVertexName(vertex2)){
         throw WrongVertexName();
     }
@@ -37,7 +37,7 @@ Graph &addEdge(Graph &graph, string vertex1, string vertex2) {
 
 }
 
-Graph& addEdge(Graph& graph,  const char* vertex1,  const char* vertex2) {
+Graph1& addEdge(Graph1& graph, const char* vertex1, const char* vertex2) {
     if (!Vertex::checkVertexName(vertex1) || !Vertex::checkVertexName(vertex2)){
         throw WrongVertexName();
     }
@@ -52,33 +52,33 @@ Graph& addEdge(Graph& graph,  const char* vertex1,  const char* vertex2) {
 
 }
 
-void disp(Graph &graph) {
+void disp(Graph1 &graph) {
     std::cout << graph;
 }
 
 
 
-Graph &graphUnion(Graph &graph_in1, Graph &graph_in2, Graph &graph_out) {
+Graph1 &graphUnion(Graph1 &graph_in1, Graph1 &graph_in2, Graph1 &graph_out) {
     graph_out = graph_in1 + graph_in2;
     return graph_out;
 }
 
-Graph &graphIntersection(Graph &graph_in1, Graph &graph_in2, Graph &graph_out) {
+Graph1 &graphIntersection(Graph1 &graph_in1, Graph1 &graph_in2, Graph1 &graph_out) {
     graph_out = graph_in1 ^ graph_in2;
     return graph_out;
 }
 
-Graph &graphDifference(Graph &graph_in1, Graph &graph_in2, Graph &graph_out) {
+Graph1 &graphDifference(Graph1 &graph_in1, Graph1 &graph_in2, Graph1 &graph_out) {
     graph_out = graph_in1 - graph_in2;
     return graph_out;
 }
 
-Graph &graphProduct(Graph &graph_in1, Graph &graph_in2, Graph &graph_out) {
+Graph1 &graphProduct(Graph1 &graph_in1, Graph1 &graph_in2, Graph1 &graph_out) {
     graph_out = graph_in1*graph_in2;
     return graph_out;
 }
 
-Graph &graphComplement(Graph &graph_in, Graph &graph_out) {
+Graph1 &graphComplement(Graph1 &graph_in, Graph1 &graph_out) {
     graph_out = !graph_in;
     return graph_out;
 }

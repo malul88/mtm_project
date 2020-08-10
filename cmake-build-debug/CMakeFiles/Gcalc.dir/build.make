@@ -89,18 +89,18 @@ CMakeFiles/Gcalc.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gcalc.dir/main.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nhfh7\CLionProjects\Gcalc\main.cpp -o CMakeFiles\Gcalc.dir\main.cpp.s
 
-CMakeFiles/Gcalc.dir/Graph.cpp.obj: CMakeFiles/Gcalc.dir/flags.make
-CMakeFiles/Gcalc.dir/Graph.cpp.obj: ../Graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nhfh7\CLionProjects\Gcalc\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Gcalc.dir/Graph.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gcalc.dir\Graph.cpp.obj -c C:\Users\nhfh7\CLionProjects\Gcalc\Graph.cpp
+CMakeFiles/Gcalc.dir/Graph1.cpp.obj: CMakeFiles/Gcalc.dir/flags.make
+CMakeFiles/Gcalc.dir/Graph1.cpp.obj: ../Graph1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nhfh7\CLionProjects\Gcalc\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Gcalc.dir/Graph1.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gcalc.dir\Graph1.cpp.obj -c C:\Users\nhfh7\CLionProjects\Gcalc\Graph1.cpp
 
-CMakeFiles/Gcalc.dir/Graph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gcalc.dir/Graph.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nhfh7\CLionProjects\Gcalc\Graph.cpp > CMakeFiles\Gcalc.dir\Graph.cpp.i
+CMakeFiles/Gcalc.dir/Graph1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gcalc.dir/Graph1.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nhfh7\CLionProjects\Gcalc\Graph1.cpp > CMakeFiles\Gcalc.dir\Graph1.cpp.i
 
-CMakeFiles/Gcalc.dir/Graph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gcalc.dir/Graph.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nhfh7\CLionProjects\Gcalc\Graph.cpp -o CMakeFiles\Gcalc.dir\Graph.cpp.s
+CMakeFiles/Gcalc.dir/Graph1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gcalc.dir/Graph1.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nhfh7\CLionProjects\Gcalc\Graph1.cpp -o CMakeFiles\Gcalc.dir\Graph1.cpp.s
 
 CMakeFiles/Gcalc.dir/Vertex.cpp.obj: CMakeFiles/Gcalc.dir/flags.make
 CMakeFiles/Gcalc.dir/Vertex.cpp.obj: ../Vertex.cpp
@@ -167,41 +167,41 @@ CMakeFiles/Gcalc.dir/Exeptions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gcalc.dir/Exeptions.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nhfh7\CLionProjects\Gcalc\Exeptions.cpp -o CMakeFiles\Gcalc.dir\Exeptions.cpp.s
 
-CMakeFiles/Gcalc.dir/calc_graph.cpp.obj: CMakeFiles/Gcalc.dir/flags.make
-CMakeFiles/Gcalc.dir/calc_graph.cpp.obj: ../calc_graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nhfh7\CLionProjects\Gcalc\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Gcalc.dir/calc_graph.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gcalc.dir\calc_graph.cpp.obj -c C:\Users\nhfh7\CLionProjects\Gcalc\calc_graph.cpp
+CMakeFiles/Gcalc.dir/graph.cpp.obj: CMakeFiles/Gcalc.dir/flags.make
+CMakeFiles/Gcalc.dir/graph.cpp.obj: ../graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nhfh7\CLionProjects\Gcalc\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Gcalc.dir/graph.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gcalc.dir\graph.cpp.obj -c C:\Users\nhfh7\CLionProjects\Gcalc\graph.cpp
 
-CMakeFiles/Gcalc.dir/calc_graph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gcalc.dir/calc_graph.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nhfh7\CLionProjects\Gcalc\calc_graph.cpp > CMakeFiles\Gcalc.dir\calc_graph.cpp.i
+CMakeFiles/Gcalc.dir/graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gcalc.dir/graph.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nhfh7\CLionProjects\Gcalc\graph.cpp > CMakeFiles\Gcalc.dir\graph.cpp.i
 
-CMakeFiles/Gcalc.dir/calc_graph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gcalc.dir/calc_graph.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nhfh7\CLionProjects\Gcalc\calc_graph.cpp -o CMakeFiles\Gcalc.dir\calc_graph.cpp.s
+CMakeFiles/Gcalc.dir/graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gcalc.dir/graph.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nhfh7\CLionProjects\Gcalc\graph.cpp -o CMakeFiles\Gcalc.dir\graph.cpp.s
 
 # Object files for target Gcalc
 Gcalc_OBJECTS = \
 "CMakeFiles/Gcalc.dir/main.cpp.obj" \
-"CMakeFiles/Gcalc.dir/Graph.cpp.obj" \
+"CMakeFiles/Gcalc.dir/Graph1.cpp.obj" \
 "CMakeFiles/Gcalc.dir/Vertex.cpp.obj" \
 "CMakeFiles/Gcalc.dir/Edges.cpp.obj" \
 "CMakeFiles/Gcalc.dir/Gcalc.cpp.obj" \
 "CMakeFiles/Gcalc.dir/Parser.cpp.obj" \
 "CMakeFiles/Gcalc.dir/Exeptions.cpp.obj" \
-"CMakeFiles/Gcalc.dir/calc_graph.cpp.obj"
+"CMakeFiles/Gcalc.dir/graph.cpp.obj"
 
 # External object files for target Gcalc
 Gcalc_EXTERNAL_OBJECTS =
 
 Gcalc.exe: CMakeFiles/Gcalc.dir/main.cpp.obj
-Gcalc.exe: CMakeFiles/Gcalc.dir/Graph.cpp.obj
+Gcalc.exe: CMakeFiles/Gcalc.dir/Graph1.cpp.obj
 Gcalc.exe: CMakeFiles/Gcalc.dir/Vertex.cpp.obj
 Gcalc.exe: CMakeFiles/Gcalc.dir/Edges.cpp.obj
 Gcalc.exe: CMakeFiles/Gcalc.dir/Gcalc.cpp.obj
 Gcalc.exe: CMakeFiles/Gcalc.dir/Parser.cpp.obj
 Gcalc.exe: CMakeFiles/Gcalc.dir/Exeptions.cpp.obj
-Gcalc.exe: CMakeFiles/Gcalc.dir/calc_graph.cpp.obj
+Gcalc.exe: CMakeFiles/Gcalc.dir/graph.cpp.obj
 Gcalc.exe: CMakeFiles/Gcalc.dir/build.make
 Gcalc.exe: CMakeFiles/Gcalc.dir/linklibs.rsp
 Gcalc.exe: CMakeFiles/Gcalc.dir/objects1.rsp

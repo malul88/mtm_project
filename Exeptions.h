@@ -2,6 +2,7 @@
 #ifndef GCALC_EXEPTIONS_H
 #define GCALC_EXEPTIONS_H
 #include <exception>
+#include <string>
 
 
 
@@ -46,7 +47,9 @@ public:
         const char* what() const noexcept ;
     };
 
-    class OutOfAmmo : public ParserExceptions {
+    class VertexNotFound : public ParserExceptions {
+    public:
+        const char* what() const noexcept ;
 
     };
 

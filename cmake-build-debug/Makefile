@@ -223,32 +223,32 @@ Gcalc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Gcalc.cpp.s
 .PHONY : Gcalc.cpp.s
 
-Graph.obj: Graph.cpp.obj
+Graph1.obj: Graph1.cpp.obj
 
-.PHONY : Graph.obj
+.PHONY : Graph1.obj
 
 # target to build an object file
-Graph.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Graph.cpp.obj
-.PHONY : Graph.cpp.obj
+Graph1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Graph1.cpp.obj
+.PHONY : Graph1.cpp.obj
 
-Graph.i: Graph.cpp.i
+Graph1.i: Graph1.cpp.i
 
-.PHONY : Graph.i
+.PHONY : Graph1.i
 
 # target to preprocess a source file
-Graph.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Graph.cpp.i
-.PHONY : Graph.cpp.i
+Graph1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Graph1.cpp.i
+.PHONY : Graph1.cpp.i
 
-Graph.s: Graph.cpp.s
+Graph1.s: Graph1.cpp.s
 
-.PHONY : Graph.s
+.PHONY : Graph1.s
 
 # target to generate assembly for a file
-Graph.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Graph.cpp.s
-.PHONY : Graph.cpp.s
+Graph1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Graph1.cpp.s
+.PHONY : Graph1.cpp.s
 
 Parser.obj: Parser.cpp.obj
 
@@ -304,32 +304,32 @@ Vertex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/Vertex.cpp.s
 .PHONY : Vertex.cpp.s
 
-calc_graph.obj: calc_graph.cpp.obj
+graph.obj: graph.cpp.obj
 
-.PHONY : calc_graph.obj
+.PHONY : graph.obj
 
 # target to build an object file
-calc_graph.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/calc_graph.cpp.obj
-.PHONY : calc_graph.cpp.obj
+graph.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/graph.cpp.obj
+.PHONY : graph.cpp.obj
 
-calc_graph.i: calc_graph.cpp.i
+graph.i: graph.cpp.i
 
-.PHONY : calc_graph.i
+.PHONY : graph.i
 
 # target to preprocess a source file
-calc_graph.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/calc_graph.cpp.i
-.PHONY : calc_graph.cpp.i
+graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/graph.cpp.i
+.PHONY : graph.cpp.i
 
-calc_graph.s: calc_graph.cpp.s
+graph.s: graph.cpp.s
 
-.PHONY : calc_graph.s
+.PHONY : graph.s
 
 # target to generate assembly for a file
-calc_graph.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/calc_graph.cpp.s
-.PHONY : calc_graph.cpp.s
+graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gcalc.dir\build.make CMakeFiles/Gcalc.dir/graph.cpp.s
+.PHONY : graph.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -376,18 +376,18 @@ help:
 	@echo ... Gcalc.obj
 	@echo ... Gcalc.i
 	@echo ... Gcalc.s
-	@echo ... Graph.obj
-	@echo ... Graph.i
-	@echo ... Graph.s
+	@echo ... Graph1.obj
+	@echo ... Graph1.i
+	@echo ... Graph1.s
 	@echo ... Parser.obj
 	@echo ... Parser.i
 	@echo ... Parser.s
 	@echo ... Vertex.obj
 	@echo ... Vertex.i
 	@echo ... Vertex.s
-	@echo ... calc_graph.obj
-	@echo ... calc_graph.i
-	@echo ... calc_graph.s
+	@echo ... graph.obj
+	@echo ... graph.i
+	@echo ... graph.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

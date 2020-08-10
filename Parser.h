@@ -23,7 +23,7 @@ public:
 
     static std::string extractFirstWord(std::basic_string<char> str);
 
-    Graph* dealWithDefinition(const std::string& graph_name, std::string str, int equal);
+    Graph1* dealWithDefinition(const std::string& graph_name, std::string str, int equal);
 
     void dealWithEqual(std::string left_o, std::string basicString, int equal);
 
@@ -31,35 +31,35 @@ public:
 
     Edges makeSetOfEdge(Vertex vertex, std::vector<std::pair<std::string, std::string>> edge_result);
 
-    Graph complement(std::string basicString);
+    Graph1 complement(std::string basicString);
 
 
-    Graph multipleOperand(std::string basicString);
+    Graph1 multipleOperand(std::string basicString);
 
-    Graph binaryExpression(std::vector<char> vec_operands,std::vector<std::string> vec_var); // create new func
+    Graph1 binaryExpression(std::vector<char> vec_operands, std::vector<std::string> vec_var); // create new func
 
-    Graph gUnion(std::string left, std::string right);
+    Graph1 gUnion(std::string left, std::string right);
 
-    Graph gUnion(Graph& g1,Graph& g2);
+    Graph1 gUnion(Graph1& g1, Graph1& g2);
 
-    Graph gIntersection(std::string left, std::string right);
+    Graph1 gIntersection(std::string left, std::string right);
 
-    Graph gIntersection(Graph& g1,Graph& g2);
+    Graph1 gIntersection(Graph1& g1, Graph1& g2);
 
-    Graph gDifference(std::string left, std::string right);
+    Graph1 gDifference(std::string left, std::string right);
 
-    Graph gDifference(Graph& g1,Graph& g2);
+    Graph1 gDifference(Graph1& g1, Graph1& g2);
 
-    Graph gProduct(std::string basicString, std::string basicString1);
+    Graph1 gProduct(std::string basicString, std::string basicString1);
 
-    Graph gProduct(Graph& g1,Graph& g2);
+    Graph1 gProduct(Graph1& g1, Graph1& g2);
 
-    void addGraph(std::string graph_name, Graph* graph);
+    void addGraph(std::string graph_name, Graph1* graph);
 
-//    Graph stringToGraph(std::string string); //yoav_func
-    void writeGraphToFile(Graph &graph, std::string basicString);
+//    Graph1 stringToGraph(std::string string); //yoav_func
+    void writeGraphToFile(Graph1 &graph, std::string basicString);
 
-    Graph loadGraphFromFile(std::string basicString);
+    Graph1 loadGraphFromFile(std::string basicString);
 };
 
 

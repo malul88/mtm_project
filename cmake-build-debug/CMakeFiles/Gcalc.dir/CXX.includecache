@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/nhfh7/CLionProjects/Gcalc/Edges.cpp
+Edges.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
+
 C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
 iostream
 -
@@ -14,17 +18,31 @@ utility
 set
 -
 
+C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.cpp
+Exeptions.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
+
 C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
 exception
 -
+string
+-
+
+C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.cpp
+Gcalc.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h
 
 C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h
-Graph.h
-C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
+Graph1.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Graph1.h
 map
 -
 
-C:/Users/nhfh7/CLionProjects/Gcalc/Graph.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Graph1.cpp
+Graph1.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Graph1.h
+
+C:/Users/nhfh7/CLionProjects/Gcalc/Graph1.h
 iostream
 -
 string.h
@@ -66,6 +84,12 @@ vector
 Exeptions.h
 C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
 
+C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.cpp
+Vertex.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
+stack
+-
+
 C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
 iostream
 -
@@ -73,4 +97,36 @@ set
 -
 Exeptions.h
 C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
+
+C:/Users/nhfh7/CLionProjects/Gcalc/graph.cpp
+graph.h
+C:/Users/nhfh7/CLionProjects/Gcalc/graph.h
+
+C:/Users/nhfh7/CLionProjects/Gcalc/graph.h
+Parser.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h
+Vertex.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
+Edges.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
+Exeptions.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Exeptions.h
+
+C:/Users/nhfh7/CLionProjects/Gcalc/main.cpp
+iostream
+-
+string
+-
+Vertex.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Vertex.h
+Edges.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Edges.h
+Graph1.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Graph1.h
+Gcalc.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Gcalc.h
+Parser.h
+C:/Users/nhfh7/CLionProjects/Gcalc/Parser.h
+fstream
+-
 

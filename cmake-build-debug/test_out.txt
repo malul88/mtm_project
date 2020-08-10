@@ -1,0 +1,120 @@
+Error : VertexNotFound
+Error: Undefined command 'g2 == { x3,x4,x5,x6 | <x3,x2> ,<x3,x5> }'
+x3
+x4
+x5
+x6
+$
+x3 x4
+x4 x3
+x4 x6
+x5 x3
+x5 x4
+x5 x6
+x6 x3
+x6 x4
+x6 x5
+x1
+x2
+x3
+x4
+x5
+x6
+$
+x1 x2
+x1 x3
+x3 x4
+x3 x5
+x3 x6
+x4 x5
+Error : Argument Not Found
+Error : Argument Not Found
+x1
+x10
+x11
+x12
+x2
+x3
+x4
+x5
+x6
+$
+x1 x2
+x1 x3
+x10 x11
+x3 x4
+x4 x3
+x4 x6
+x5 x3
+x5 x4
+x5 x6
+x6 x3
+x6 x4
+x6 x5
+Error: Undefined command 'who/'
+g1
+g2
+g3
+g4
+g1
+g2
+g3
+Error : Argument Not Found
+[x1;x3]
+[x1;x4]
+[x1;x5]
+[x1;x6]
+[x2;x3]
+[x2;x4]
+[x2;x5]
+[x2;x6]
+[x3;x3]
+[x3;x4]
+[x3;x5]
+[x3;x6]
+[x4;x3]
+[x4;x4]
+[x4;x5]
+[x4;x6]
+[x5;x3]
+[x5;x4]
+[x5;x5]
+[x5;x6]
+[x6;x3]
+[x6;x4]
+[x6;x5]
+[x6;x6]
+$
+[x1;x3] [x2;x5]
+[x1;x3] [x2;x6]
+[x1;x3] [x3;x5]
+[x1;x3] [x3;x6]
+[x1;x4] [x2;x5]
+[x1;x4] [x3;x5]
+[x3;x3] [x4;x5]
+[x3;x3] [x4;x6]
+[x3;x4] [x4;x5]
+[x4;x3] [x3;x5]
+[x4;x3] [x3;x6]
+[x4;x3] [x6;x5]
+[x4;x3] [x6;x6]
+[x4;x4] [x3;x5]
+[x4;x4] [x6;x5]
+[x5;x3] [x3;x5]
+[x5;x3] [x3;x6]
+[x5;x3] [x4;x5]
+[x5;x3] [x4;x6]
+[x5;x3] [x6;x5]
+[x5;x3] [x6;x6]
+[x5;x4] [x3;x5]
+[x5;x4] [x4;x5]
+[x5;x4] [x6;x5]
+[x6;x3] [x3;x5]
+[x6;x3] [x3;x6]
+[x6;x3] [x4;x5]
+[x6;x3] [x4;x6]
+[x6;x3] [x5;x5]
+[x6;x3] [x5;x6]
+[x6;x4] [x3;x5]
+[x6;x4] [x4;x5]
+[x6;x4] [x5;x5]
