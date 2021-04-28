@@ -19,12 +19,12 @@ this operand will union the vertexes Group and the Edges Group.
 ```
 <Graph name1> + <Graph name2>
 ```
-Intersection <be />
+Intersection <br />
 this operand will intesect the vertexes Group and the Edges Group.
 ```
 <Graph name1> ^ <Graph name2>
 ```
-Difference <be />
+Difference <br />
 this operand will reduce the vertexes Group and the Edges Group from g1 to g2 respectively.
 ```
 <Graph name1> - <Graph name2>
